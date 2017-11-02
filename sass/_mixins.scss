@@ -1,0 +1,28 @@
+@mixin border-radius($radius){
+	-webkit-border-radius:$radius;
+	-moz-border-radius:$radius;
+	-ms-border-radius:$radius;
+	border-radius:$radius;
+}
+
+@mixin button-design($color,$border,$bg){
+	color:$color;
+	border:$border;
+	background: $bg;
+}
+
+@mixin transition($property,$value) {
+	-webkit-#{$property}:$value;
+	-moz-#{$property}:$value;
+	-o-#{$property}:$value;
+	-ms-#{$property}:$value;
+	$propery:$value;
+}
+
+@mixin transform($property, $value) {
+	-webkit-#{$property}:$value;
+	-moz-#{$property}:$value;
+	-o-#{$property}:$value;
+	-ms-#{$property}:$value;
+	$propery:$value;
+}

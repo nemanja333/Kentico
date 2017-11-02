@@ -1,0 +1,310 @@
+@import "mixins";
+
+$secondary-color:#2C3E50;
+$primary-color:#18BC9C;
+
+
+.primary-color {
+	color: $primary-color;
+}
+
+.secondary-color {
+	color:$secondary-color;
+}
+
+.primary-bg {
+	background: $primary-color;
+}
+
+.secondary-bg {
+	background: $secondary-color;
+}
+
+.hide {
+	display: none;
+}
+
+.show {
+	display: block;
+}
+
+body {
+	font-family: Verdana, sans-serif;
+}
+
+
+.navbar {
+	background-color: $secondary-color!important;
+	ul {
+		li {
+			a {
+				color:#fff!important;
+				font-variant: small-caps;
+			}
+			a:hover, a:focus, a:active, a.active {
+				color:$primary-color!important;
+			}
+		}
+	}
+	.navbar-brand {
+		color: $primary-color;
+		text-transform: capitalize;
+		font-variant: small-caps;
+	}
+	.navbar-brand:hover, .navbar-brand:focus, .navba-brand.active {
+		color: $primary-color;
+	}
+}
+
+.stage {
+	margin-top: 56px;
+	width: 100%;
+	height: 60vh;
+	display: flex;
+	align-items: center;
+}
+
+#stage-home {
+	background: url("../img/stage.jpg") no-repeat center center fixed;
+	background-size: cover;
+	height:100vh;
+}
+
+.stage-caption {
+	text-align:center;
+	max-width:80%;
+	color:#fff;
+	margin:0 auto;
+	padding: 1rem;
+	background-color: rgba(	44, 62, 80,0.7);
+	@include border-radius(1rem);
+		h1 {
+			color: $primary-color;
+		}
+		a {
+			@include button-design($primary-color,$primary-color 1px solid,transparent);
+			font-weight: bold;
+		}
+		a:hover {
+			@include button-design(#fff, $secondary-color 1px solid, $primary-color);
+			cursor:pointer;
+		}
+}
+
+.section-space {
+	padding: 4rem;
+}
+
+
+#about-us {
+
+	h2 {
+		font-weight: bold;
+		border-left: 5px solid $primary-color;
+		padding: 5px 10px;
+	}
+}
+
+#our-progress {
+	background-color: #f1f1f1;
+	
+		
+	.our-progress-text {
+
+	}	
+	h2 {
+		color: $primary-color;
+		border-left:5px solid $primary-color;
+		padding: 5px 10px;
+	}
+}
+
+#what-we-do {
+	background: $secondary-color;
+	color: #fff;
+}
+
+#main-footer {
+	background-color: $secondary-color;
+	padding-bottom: 1rem;
+
+	ul {
+		list-style: none;
+		margin:none;
+	}
+	h6 {
+		font-variant: small-caps;
+		color: $primary-color;
+		margin-bottom: 1rem;
+	}
+
+	a {
+		color:$secondary-color*2.5 ;
+		font-size:14px;
+
+	}
+
+	.copyright {
+		color:$secondary-color*2.5;
+		font-size:12px;
+
+	}
+}
+
+
+
+/*HOW WE WORK */
+
+
+#your-position {
+	background: #f1f1f1;
+
+	h2 {
+		color: $primary-color;
+	}
+}
+
+#stage-how-we-work {
+	background: url("../img/how-we-work.jpeg") no-repeat center fixed;
+	background-size: cover;
+}
+
+#companies-rules {
+
+	h3 {
+		color: $primary-color;
+		text-align: center;
+	}
+}
+
+
+#stage-students {
+	background: url("../img/students.jpg") no-repeat center bottom fixed;
+	background-size:cover;
+}
+
+#stage-carrier {
+	background: url("../img/carrier.jpg") no-repeat center bottom fixed;
+	background-size: cover;
+}
+
+#job-positions {
+	
+	.card {
+
+		@include transition(transition,all 0.7s);	
+	}
+	.card:hover {
+		
+		@include transform(transform,translate(0,-5px));
+		box-shadow:5px 5px 5px #ccc;
+	}
+	h5 {
+		color: $primary-color;
+		border-left: 5px solid $primary-color;
+		padding-left: 5px;
+	}
+	a {
+		@include button-design($primary-color,$primary-color 1px solid,transparent);
+		font-weight: bold;	
+	}
+	a:hover {
+		@include button-design(#fff,$secondary-color 1px solid,$primary-color);
+		cursor: pointer;
+	}
+
+	button.town {
+		@include button-design($primary-color,$primary-color 1px solid,transparent);
+		font-weight: bold;
+	}
+
+	button:hover {
+		cursor:pointer
+	}
+}
+
+.active-town {
+		font-weight: bold;
+		color: #fff!important;
+		background: $primary-color!important;
+	}
+
+#stage-contact {
+	background: url("../img/contact.jpg") no-repeat center center fixed;
+	background-size: cover;
+}
+
+#stage-front-end-developer {
+	background: url("../img/front-end.jpg") no-repeat center top fixed;
+	background-size: cover;
+}
+
+#stage-full-stack-developer {
+	background: url("../img/fullstack.jpg") no-repeat center top fixed;
+	background-size: cover;
+}
+
+#stage-asp-net-developer {
+	background: url("../img/developer.jpg") no-repeat center top fixed;
+	background-size: cover;
+}
+
+#stage-support-engineer {
+	background: url("../img/engineer.jpeg") no-repeat center bottom fixed;
+	background-size: cover;
+}
+
+#stage-creative-writer {
+	background: url("../img/writer.jpg") no-repeat center center fixed;
+	background-size: cover;
+}
+
+.job-offer {
+
+	h2 {
+		padding-bottom: 1rem;
+		padding-top: 1rem;;
+	}
+}
+
+
+.what-will-you-do {
+	background: #f1f1f1;
+
+	h2 {
+		color: $primary-color;
+	}
+}
+
+.job-description {
+
+	h2 {
+		color: $primary-color;
+		padding-bottom: 1rem;
+	}
+
+	a {
+			@include button-design(#fff,$secondary-color 1px solid,$primary-color);
+			margin-top: 2rem;
+			font-weight: bold;
+
+		}
+		a:hover {
+			@include button-design($primary-color, $primary-color 1px solid, transparent);
+			cursor:pointer;
+		}
+}
+
+#carousel img {
+	
+	  min-width: 100%;
+	  height: auto;
+	
+}
+
+.carousel-item {
+
+	max-height: 100vh;
+	min-height:300px;
+}
+/*MAIN SECTION */

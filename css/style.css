@@ -1,0 +1,226 @@
+.primary-color {
+  color: #18BC9C; }
+
+.secondary-color {
+  color: #2C3E50; }
+
+.primary-bg {
+  background: #18BC9C; }
+
+.secondary-bg {
+  background: #2C3E50; }
+
+.hide {
+  display: none; }
+
+.show {
+  display: block; }
+
+body {
+  font-family: Verdana, sans-serif; }
+
+.navbar {
+  background-color: #2C3E50 !important; }
+  .navbar ul li a {
+    color: #fff !important;
+    font-variant: small-caps; }
+  .navbar ul li a:hover, .navbar ul li a:focus, .navbar ul li a:active, .navbar ul li a.active {
+    color: #18BC9C !important; }
+  .navbar .navbar-brand {
+    color: #18BC9C;
+    text-transform: capitalize;
+    font-variant: small-caps; }
+  .navbar .navbar-brand:hover, .navbar .navbar-brand:focus, .navbar .navba-brand.active {
+    color: #18BC9C; }
+
+.stage {
+  margin-top: 56px;
+  width: 100%;
+  height: 60vh;
+  display: flex;
+  align-items: center; }
+
+#stage-home {
+  background: url("../img/stage.jpg") no-repeat center center fixed;
+  background-size: cover;
+  height: 100vh; }
+
+.stage-caption {
+  text-align: center;
+  max-width: 80%;
+  color: #fff;
+  margin: 0 auto;
+  padding: 1rem;
+  background-color: rgba(44, 62, 80, 0.7);
+  -webkit-border-radius: 1rem;
+  -moz-border-radius: 1rem;
+  -ms-border-radius: 1rem;
+  border-radius: 1rem; }
+  .stage-caption h1 {
+    color: #18BC9C; }
+  .stage-caption a {
+    color: #18BC9C;
+    border: #18BC9C 1px solid;
+    background: transparent;
+    font-weight: bold; }
+  .stage-caption a:hover {
+    color: #fff;
+    border: #2C3E50 1px solid;
+    background: #18BC9C;
+    cursor: pointer; }
+
+.section-space {
+  padding: 4rem; }
+
+#about-us h2 {
+  font-weight: bold;
+  border-left: 5px solid #18BC9C;
+  padding: 5px 10px; }
+
+#our-progress {
+  background-color: #f1f1f1; }
+  #our-progress h2 {
+    color: #18BC9C;
+    border-left: 5px solid #18BC9C;
+    padding: 5px 10px; }
+
+#what-we-do {
+  background: #2C3E50;
+  color: #fff; }
+
+#main-footer {
+  background-color: #2C3E50;
+  padding-bottom: 1rem; }
+  #main-footer ul {
+    list-style: none;
+    margin: none; }
+  #main-footer h6 {
+    font-variant: small-caps;
+    color: #18BC9C;
+    margin-bottom: 1rem; }
+  #main-footer a {
+    color: #6e9bc8;
+    font-size: 14px; }
+  #main-footer .copyright {
+    color: #6e9bc8;
+    font-size: 12px; }
+
+/*HOW WE WORK */
+#your-position {
+  background: #f1f1f1; }
+  #your-position h2 {
+    color: #18BC9C; }
+
+#stage-how-we-work {
+  background: url("../img/how-we-work.jpeg") no-repeat center fixed;
+  background-size: cover; }
+
+#companies-rules h3 {
+  color: #18BC9C;
+  text-align: center; }
+
+#stage-students {
+  background: url("../img/students.jpg") no-repeat center bottom fixed;
+  background-size: cover; }
+
+#stage-carrier {
+  background: url("../img/carrier.jpg") no-repeat center bottom fixed;
+  background-size: cover; }
+
+#job-positions .card {
+  -webkit-transition: all 0.7s;
+  -moz-transition: all 0.7s;
+  -o-transition: all 0.7s;
+  -ms-transition: all 0.7s; }
+#job-positions .card:hover {
+  -webkit-transform: translate(0, -5px);
+  -moz-transform: translate(0, -5px);
+  -o-transform: translate(0, -5px);
+  -ms-transform: translate(0, -5px);
+  box-shadow: 5px 5px 5px #ccc; }
+#job-positions h5 {
+  color: #18BC9C;
+  border-left: 5px solid #18BC9C;
+  padding-left: 5px; }
+#job-positions a {
+  color: #18BC9C;
+  border: #18BC9C 1px solid;
+  background: transparent;
+  font-weight: bold; }
+#job-positions a:hover {
+  color: #fff;
+  border: #2C3E50 1px solid;
+  background: #18BC9C;
+  cursor: pointer; }
+#job-positions button.town {
+  color: #18BC9C;
+  border: #18BC9C 1px solid;
+  background: transparent;
+  font-weight: bold; }
+#job-positions button:hover {
+  cursor: pointer; }
+
+.active-town {
+  font-weight: bold;
+  color: #fff !important;
+  background: #18BC9C !important; }
+
+#stage-contact {
+  background: url("../img/contact.jpg") no-repeat center center fixed;
+  background-size: cover; }
+
+#stage-front-end-developer {
+  background: url("../img/front-end.jpg") no-repeat center top fixed;
+  background-size: cover; }
+
+#stage-full-stack-developer {
+  background: url("../img/fullstack.jpg") no-repeat center top fixed;
+  background-size: cover; }
+
+#stage-asp-net-developer {
+  background: url("../img/developer.jpg") no-repeat center top fixed;
+  background-size: cover; }
+
+#stage-support-engineer {
+  background: url("../img/engineer.jpeg") no-repeat center bottom fixed;
+  background-size: cover; }
+
+#stage-creative-writer {
+  background: url("../img/writer.jpg") no-repeat center center fixed;
+  background-size: cover; }
+
+.job-offer h2 {
+  padding-bottom: 1rem;
+  padding-top: 1rem; }
+
+.what-will-you-do {
+  background: #f1f1f1; }
+  .what-will-you-do h2 {
+    color: #18BC9C; }
+
+.job-description h2 {
+  color: #18BC9C;
+  padding-bottom: 1rem; }
+.job-description a {
+  color: #fff;
+  border: #2C3E50 1px solid;
+  background: #18BC9C;
+  margin-top: 2rem;
+  font-weight: bold; }
+.job-description a:hover {
+  color: #18BC9C;
+  border: #18BC9C 1px solid;
+  background: transparent;
+  cursor: pointer; }
+
+#carousel img {
+  min-width: 100%;
+  height: auto; }
+
+.carousel-item {
+  max-height: 100vh;
+  min-height: 300px; }
+
+/*MAIN SECTION */
+
+/*# sourceMappingURL=style.css.map */
